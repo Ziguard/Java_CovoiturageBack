@@ -1,0 +1,8 @@
+
+${AnsiColor.BRIGHT_MAGENTA}  ____                                  ____                  _
+${AnsiColor.MAGENTA} / ___|__ _ _ __ ___  _ __  _   _ ___  / ___|  ___ _ ____   _(_) ___ ___  ___
+${AnsiColor.BLUE}| |   / _` | '_ ` _ \| '_ \| | | / __| \___ \ / _ \ '__\ \ / / |/ __/ _ \/ __|
+${AnsiColor.CYAN}| |__| (_| | | | | | | |_) | |_| \__ \  ___) |  __/ |   \ V /| | (_|  __/\__ \
+${AnsiColor.BRIGHT_CYAN} \____\__,_|_| |_| |_| .__/ \__,_|___/ |____/ \___|_|    \_/ |_|\___\___||___/
+${AnsiColor.BRIGHT_GREEN}                     |_|
+${AnsiColor.RED}:: Campus Services ::   powered by Spring Boot ${spring-boot.version}

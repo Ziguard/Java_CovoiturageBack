@@ -1,0 +1,28 @@
+image: maven:3.3.9-jdk-8
+
+cache:
+  paths:
+    - .m2/
+
+variables:
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2"
+
+stages:
+  - build
+  - test
+
+maven_package_job:
+  stage: build
+  tags: 
+    - maven
+  script: "mvn package -B -Dmaven.test.skip=true"
+  
+# Both compiling and running
+maven_unit_testing_job:
+  stage: test
+  tags: 
+    - maven
+  script: "mvn test -B"
+  
+after_script: 
+  - mvn clean -B
